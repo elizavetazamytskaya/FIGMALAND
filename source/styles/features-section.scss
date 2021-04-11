@@ -1,0 +1,42 @@
+.features {
+    background: #252B42;
+    padding: 96px 0 40px;
+    text-align: center;
+    &-subheader {
+        @include primary-subheader;
+        margin: 0;
+    }
+    &-header {
+        @include secondary-header;
+        margin: 17px 0 27px;
+    }
+    &-descr {
+        @include primary-text;
+    }
+    &-content {
+        display: flex;
+        align-items: center;
+        &>img {
+            width: 80%;
+        }
+        &-items {
+            width: 30%;
+            &-item {
+                text-align: left;
+                margin: 90px 0;
+                &-header {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 15px;
+                    p {
+                        @include primary-subheader;
+                        margin: 0 0 0 10px;
+                    }
+                }
+                &-descr {
+                    @include secondary-text__white;
+                }
+            }
+        }
+    }
+}
