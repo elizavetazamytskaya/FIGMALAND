@@ -1,0 +1,28 @@
+.buy {
+    padding: 100px 0;
+    background: #252B42;
+    text-align: center;
+    &-subheader {
+        @include primary-subheader;
+    }
+    &-header {
+        @include secondary-header;
+        margin: 17px 0 27px;
+    }
+    &-descr {
+        @include primary-text;
+    }
+    &-buttons {
+        margin-top: 90px;
+        button{
+            @include primary-button__small;
+        }
+        #buy-button__first {
+            padding: 18px 31px;
+            margin-right: 16px;
+        }
+        #buy-button__second {
+            padding: 18px 45px;
+        }
+    }
+}
