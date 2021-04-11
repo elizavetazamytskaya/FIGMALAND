@@ -1,0 +1,31 @@
+.home-section {
+    background-image: url('../img/home-section-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    padding: 152px 0 135px;
+    &-content {
+        text-align: center;
+        &-subheader {
+            @include primary-subheader;
+            margin: 0;
+        }
+        &-header {
+            @include primary-header;
+            margin: 17px 0 27px;
+        }
+        &-descr {
+            @include primary-text;
+            margin: 0;
+        }
+        &-btn {
+            @include primary-button__big;
+            padding: 16px 58px;
+            margin: 106px 0 0;
+        }
+        &-img {
+            position: relative;
+            top: 130px;
+        }
+    }
+}
