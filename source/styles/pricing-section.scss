@@ -1,0 +1,44 @@
+.pricing{
+    background: #252B42;
+    padding: 110px 285px 100px;
+    &-items {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        &-item {
+            text-align: start;
+            &-header {
+                @include primary-header;
+            }
+            &-descr {
+                @include secondary-text__white;
+                margin-top: 26px;
+                width: 50%;
+            }
+            &-term {
+                @include primary-text;
+            }
+            &-price {
+                display: flex;
+                align-items: center;
+                margin: 16px 0;
+                &-price {
+                    @include primary-header;
+                }
+                &-descr {
+                    @include primary-text;
+                    margin-left: 10px;
+                }
+            }
+            &-description {
+                @include primary-text;
+            }
+            &-btn {
+                @include secondary-button__small;
+                padding: 18px 38px;
+                margin-top: 40px;
+            }
+        }
+    }
+}
