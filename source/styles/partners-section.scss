@@ -1,0 +1,24 @@
+.partners {
+    background: #252B42;
+    padding: 90px 0 80px;
+    text-align: center;
+    &-header {
+        @include secondary-header;
+        margin: 0;
+    }
+    &-descr {
+        @include primary-text;
+        margin-top: 27px;
+    }
+    &-logo {
+        width: 80%;
+        margin: 110px auto 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-btn {
+        @include secondary-button__big;
+        padding: 16px 58px;
+    }
+}
