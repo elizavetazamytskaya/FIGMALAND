@@ -1,0 +1,95 @@
+.contacts {
+    background: #252B42;
+    padding: 210px 0 99px;
+    text-align: center;
+    &-header {
+        @include secondary-header;
+    }
+    &-descr {
+        @include primary-text;
+        margin: 27px 0 75px;
+    }
+    &-socialnetworks {
+        img {
+            margin: 0 16px;
+        }
+    }
+    &-map {
+        margin: 75px auto 69px;
+        width: 70%;
+    }
+    &-items {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        margin: 0 auto;
+        &-item {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            img {
+                width: 25px;
+                margin: 0 auto;
+            }
+            &-descr {
+                font-size: 12px;
+                line-height: 18px;
+                color: #FFFFFF;
+                font-family: 'Roboto Bold';
+                margin-top: 20px;
+            }
+        }
+    }
+    &-data {
+        background: #FFFFFF;
+        border: 1px solid #DDDDDD;
+        box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+        border-radius: 20px;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        margin: 68px auto 0;
+        padding: 52px 50px;
+        &-header {
+            font-size: 22px;
+            line-height: 33px;
+            color: #252B42;
+            font-family: 'Roboto Bold';
+        }
+        input,
+        textarea {
+            margin-top: 45px;
+        }
+        input {
+            background: #F5F5F5;
+            border: 1px solid #E8E8E8;
+            border-radius: 39px;
+            padding: 19px 0 19px 20px;
+            &::placeholder {
+                font-size: 15px;
+                line-height: 16px;
+                color: #18171D;
+                font-family: 'Roboto Regular';
+            }
+        }
+        textarea {
+            background: #F5F5F5;
+            border: 1px solid #E8E8E8;
+            box-sizing: border-box;
+            padding: 23px 0 0 20px;
+            &::placeholder {
+                font-size: 15px;
+                line-height: 16px;
+                color: #18171D;
+                font-family: 'Roboto Regular';
+            }
+        }
+        &-btn {
+            @include secondary-button__small;
+            padding: 18px 54px;
+            width: 145px;
+            margin-top: 45px;
+        }
+    }
+}
