@@ -7,35 +7,44 @@
         align-items: center;
     }
     &-content {
-        &-subheader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img {
+            width: 60%;
+        }
+        &-information {
+            margin-left: 113px;
+            &-subheader {
             @include primary-subheader;
             margin: 0;
-        }
-        &-header {
+            }
+            &-header {
             width: 70%;
             @include secondary-header;
             margin: 17px 0 35px;
-        }
-        &-descr {
+            }
+            &-descr {
             @include secondary-text__white;
-        }
-        &-data {
-            margin-top: 53px;
-            input {
-                width: 273px;
-                padding: 15px 0 15px 39px;
-                background: #F4F4F4;
-                border: 1px solid #E8E8E8;
-                border-radius: 39px;
-                &::placeholder {
-                    font-size: 14px;
-                    line-height: 16px;
-                    color: #18171D;
-                    font-family: 'Roboto Regular';
-                }
-                &:focus {
-                    outline: none;
-                    opacity: 0.9;
+            }
+            &-data {
+                margin-top: 53px;
+                input {
+                    width: 273px;
+                    padding: 15px 0 15px 39px;
+                    background: #F4F4F4;
+                    border: 1px solid #E8E8E8;
+                    border-radius: 39px;
+                    &::placeholder {
+                        font-size: 14px;
+                        line-height: 16px;
+                        color: #18171D;
+                        font-family: 'Roboto Regular';
+                    }
+                    &:focus {
+                        outline: none;
+                        opacity: 0.9;
+                    }
                 }
             }
             button {
@@ -43,6 +52,21 @@
                 text-align: center;
                 padding: 19px 38px;
                 margin-left: 12px;
+            }
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .subscribe {
+        &-content {
+            flex-direction: column;
+            &-information {
+                &-subheader {
+                    order: 1;
+                }
+                &-header {
+                    order: 2;
+                }
             }
         }
     }
