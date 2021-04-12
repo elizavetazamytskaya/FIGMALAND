@@ -35,7 +35,8 @@ nav.navbar {
                 font-family: 'Roboto Regular';
             }
             &:focus {
-                border: none;
+                outline: none;
+                opacity: 0.9;
             }
         }
         button {

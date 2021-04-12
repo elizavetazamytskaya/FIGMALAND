@@ -33,6 +33,10 @@
                     color: #18171D;
                     font-family: 'Roboto Regular';
                 }
+                &:focus {
+                    outline: none;
+                    opacity: 0.9;
+                }
             }
             button {
                 @include secondary-button__small;

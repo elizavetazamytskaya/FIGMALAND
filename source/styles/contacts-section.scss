@@ -72,6 +72,10 @@
                 color: #18171D;
                 font-family: 'Roboto Regular';
             }
+            &:focus {
+                outline: none;
+                opacity: 0.7;
+            }
         }
         textarea {
             background: #F5F5F5;
@@ -83,6 +87,10 @@
                 line-height: 16px;
                 color: #18171D;
                 font-family: 'Roboto Regular';
+            }
+            &:focus {
+                outline: none;
+                opacity: 0.7;
             }
         }
         &-btn {

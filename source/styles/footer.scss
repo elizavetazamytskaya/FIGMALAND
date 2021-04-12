@@ -1,0 +1,74 @@
+footer {
+    padding: 113px 0 130px;
+    background: #252B42;
+}
+.footer-content {
+    &-items {
+        display: flex;
+        justify-content: space-around;
+        &-item {
+            display: flex;
+            flex-direction: column;
+            &-header {
+                @include primary-subheader;
+                margin: 0 0 9px;
+            }
+            &-link {
+                font-size: 15px;
+                line-height: 27px;
+                color: #FFFFFF;
+                font-family: 'Roboto Regular';
+                text-decoration: none;
+                margin-top: 16px;
+                &:hover {
+                    color: #2091F9;
+                }
+            }
+        }
+        &-subscription {
+            &-socialnetworks {
+                img {
+                    margin-right: 32px;
+                }
+            }
+            &-header {
+                @include primary-subheader;
+                margin: 33px 0 5px;
+            }
+            &-descr {
+                font-size: 15px;
+                line-height: 27px;
+                color: #FFFFFF;
+                font-family: 'Roboto Regular';
+                margin: 0;
+            }
+            &-data {
+                display: flex;
+                flex-direction: column;
+                &-input {
+                    width: 353px;
+                    margin: 29px 0 12px;
+                    background: #F4F4F4;
+                    border: 1px solid #E8E8E8;
+                    border-radius: 39px;
+                    padding: 12px 0 12px 35px;
+                    &::placeholder {
+                        font-size: 14px;
+                        line-height: 16px;
+                        color: #18171D;
+                        font-family: 'Roboto Regular';
+                    }
+                    &:focus {
+                        outline: none;
+                        opacity: 0.9;
+                    }
+                }
+                &-btn {
+                    width: 353px;
+                    padding: 17px 0;
+                    @include secondary-button__small
+                }
+            }
+        }
+    }
+}
