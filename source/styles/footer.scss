@@ -72,3 +72,28 @@ footer {
         }
     }
 }
+@media (max-width: 992px) {
+    .footer-content {
+        padding: 33px 0 130px;
+        &-items {
+            flex-wrap: wrap;
+            &-item {
+                width: 45%;
+                margin-top: 80px;
+            }
+            &-subscription {
+                margin-top: 80px;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .footer-content {
+        text-align: center;
+        &-items {
+            &-item {
+                width: 100%;
+            }
+        }
+    }
+}
