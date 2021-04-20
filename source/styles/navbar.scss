@@ -27,7 +27,8 @@ nav.navbar {
             background: #EFEFEF;
             border: 1px solid #E8E8E8;
             border-radius: 39px;
-            padding: 15px 166px 15px 39px;
+            padding: 15px 0 15px 39px;
+            width: 273px;
             &::placeholder {
                 font-size: 14px;
                 line-height: 16px;
@@ -43,6 +44,61 @@ nav.navbar {
             @include primary-button__small;
             padding: 19px 38px;
             margin-left: 12px;
+        }
+    }
+    &-mobile-button {
+        @include primary-button__small;
+        padding: 19px 38px;
+        display: none;
+    }
+    &-mobile-menu {
+        display: none;
+    }
+}
+@media(max-width: 1296px) {
+    .navbar-content {
+        &-links {
+            margin: 0 20px 0 30px;
+            a {
+                margin: 0 15px;
+            }
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .navbar-content {
+        &-data {
+            input {
+                width: 200px;
+            }
+        }
+        &-links {
+            margin: 0 15px 0 20px;
+            a {
+                margin: 0 10px;
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .navbar-content {
+        padding-top: 28px;
+        &-links {
+            display: none;
+        }
+        &-data {
+            display: none;
+        }
+        &-mobile {
+            display: flex;
+            align-items: center;
+            &-button,
+            &-menu {
+                display: block;
+            }
+            &-menu {
+                margin-left: 28px;
+            }
         }
     }
 }

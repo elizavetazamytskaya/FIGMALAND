@@ -73,8 +73,10 @@ footer {
     }
 }
 @media (max-width: 992px) {
+    footer {
+        padding: 73px 0 97px;
+    }
     .footer-content {
-        padding: 33px 0 130px;
         &-items {
             flex-wrap: wrap;
             &-item {

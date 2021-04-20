@@ -110,6 +110,7 @@
 }
 @media (max-width: 768px) {
     .contacts {
+        padding: 160px 0 99px;
         &-map {
             width: 90%;
         }
@@ -125,7 +126,9 @@
     .contacts {
         &-items {
             flex-direction: column;
+            text-align: left;
             &-item {
+                text-align: left;
                 align-items: center;
                 width: 50%;
                 flex-direction: row;

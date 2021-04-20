@@ -1,6 +1,6 @@
 .features {
     background: #252B42;
-    padding: 96px 0 40px;
+    padding: 230px 0 40px;
     text-align: center;
     &-subheader {
         @include primary-subheader;
@@ -61,6 +61,7 @@
 }
 @media (max-width: 576px) {
     .features {
+        padding: 80px 0 40px;
         &-content {
             &-items {
                 display: flex;

@@ -5,7 +5,7 @@
     line-height: 33px;
     color: #2091F9;
     font-family: 'Roboto Bold';
-    border: none;
+    border: 1px solid transparent;
     &:hover {
         border: 1px solid #FFFFFF;
         background: none;
@@ -19,7 +19,7 @@
     line-height: 16px;
     color: #2091F9;
     font-family: 'Roboto Medium';
-    border: none;
+    border: 1px solid transparent;
     &:hover {
         border: 1px solid #FFFFFF;
         background: none;
@@ -33,7 +33,7 @@
     line-height: 33px;
     color: #FFFFFF;
     font-family: 'Roboto Bold';
-    border: none;
+    border: 1px solid transparent;
     &:hover {
         border: 1px solid #2091F9;
         background: none;
@@ -47,7 +47,7 @@
     line-height: 16px;
     color: #FFFFFF;
     font-family: 'Roboto Medium';
-    border: none;
+    border: 1px solid transparent;
     &:hover {
         border: 1px solid #2091F9;
         background: none;
